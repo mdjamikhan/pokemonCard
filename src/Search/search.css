@@ -1,0 +1,13 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+#pokimon-name-search {
+  margin: 2rem;
+  width: 600px;
+  padding: 1rem;
+  margin-left: 420px;
+}

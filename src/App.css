@@ -1,0 +1,15 @@
+.all-data {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background: #2e3944;
+  align-items: center;
+}
+#pokidex-heading {
+  margin: 0 auto;
+  letter-spacing: 5px;
+}
+a:visited {
+  color: black;
+}
