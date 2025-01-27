@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./SearchPokemondata.css";
+import "./SearchPokemonData.css";
 
 function SearchPokemonData() {
   const location = useLocation();
