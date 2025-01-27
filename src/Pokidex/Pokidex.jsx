@@ -1,6 +1,8 @@
 import React from "react";
 import Search from "../Search/Search";
 import PokemonList from "../PokemonList/PokemonList";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./Pokidex.css";
 
 function Pokidex() {
@@ -8,6 +10,7 @@ function Pokidex() {
     <div>
       <div className="pokidex-wrapper">
         <Search />
+
         <PokemonList />
       </div>
     </div>

@@ -1,13 +1,67 @@
 .search-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  /* margin: 0 auto; */
+  justify-content: center;
+  height: 15vh;
+  background: #2e3944;
+  padding: 20px;
+}
+.search-input-group input {
+  background: #77a7eb;
 }
 
-#pokimon-name-search {
-  margin: 2rem;
-  width: 600px;
-  padding: 1rem;
-  margin-left: 420px;
+.search-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a365e;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #f4f6f7;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+}
+
+.search-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.search-button:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
 }
