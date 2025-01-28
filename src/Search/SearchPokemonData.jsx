@@ -12,7 +12,8 @@ function SearchPokemonData() {
     return null;
   }
 
-  const formatList = (list) => list.map((item) => item.name || item).join(", ");
+  // Function to format the list of objects by extracting the 'name' property
+  const formatList = (list) => list.map((item) => item.name).join(", ");
 
   return (
     <div className="pokemon-details">
@@ -26,18 +27,27 @@ function SearchPokemonData() {
       <p className="pokemon-info">Weight: {pokemon.weight}</p>
       <p className="pokemon-info">Base Experience: {pokemon.base_experience}</p>
 
-      <p className="pokemon-info">Types: {formatList(pokemon.types)}</p>
-      <p className="pokemon-info">Abilities: {formatList(pokemon.abilities)}</p>
+      {/* <p className="pokemon-info">Types: {formatList(pokemon.types)}</p>
+      <p className="pokemon-info">Abilities: {formatList(pokemon.abilities)}</p> */}
 
       <div className="pokemon-stats">
         <h3>Stats:</h3>
-        <ul>
-          {pokemon.stats.map((stat) => (
-            <p key={stat.stat.name}>
-              {stat.stat.name.toUpperCase()}: {stat.base_stat}
-            </p>
-          ))}
-        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pokemon.stats.map((stat) => (
+              <tr key={stat.stat.name}>
+                <td>{stat.stat.name.toUpperCase()}</td>
+                <td>{stat.base_stat}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <div className="pokemon-moves">

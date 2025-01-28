@@ -32,12 +32,3 @@
 .pokemon:hover #all-image {
   animation: motionEffect 0.3s infinite alternate ease-in-out;
 }
-
-/* @keyframes motionEffect {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(3);
-  }
-} */
